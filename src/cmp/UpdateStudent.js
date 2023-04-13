@@ -23,13 +23,12 @@ const UpdateStudent = () => {
 
   const handleSubmit = () => {
     dataContext.entries[index] = updateData;
-    //navigate(-1)
-    navi("./student");
+    navi("/student");
     console.log(dataContext);
   };
 
   const cancelUpdateStudent = () => {
-    navi("./student");
+    navi("/student");
   };
 
   return (

@@ -64,7 +64,7 @@ function App() {
             }
           />
           <Route
-            path="/newstudent"
+            path="/addstudent"
             element={
               <ContextData.Provider
                 value={{ entries: data, updateData: setData }}

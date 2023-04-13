@@ -16,7 +16,7 @@ const Student = () => {
           <button
             className="btn"
             onClick={() => {
-              navi("/newstudent");
+              navi("/addstudent");
             }}
           >
             Add New Student
@@ -41,7 +41,9 @@ const Student = () => {
                   <td className="t-head">{item.course}</td>
                   <td className="t-head">{item.batch}</td>
                   <td className="t-head">
-                    <Link to="/updatestudent">Edit</Link>
+                    <Link to="/updatestudent" state={{ data: index }}>
+                      Edit
+                    </Link>
                   </td>
                 </tr>
               );

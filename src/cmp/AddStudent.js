@@ -8,9 +8,9 @@ const AddStudent = () => {
   const nav = useNavigate();
   const newStu = {
     name: "",
-    month: "",
-    year: "",
-    Batch: "",
+    age: "",
+    course: "",
+    batch: "",
   };
 
   const handleChange = (e) => {
@@ -34,22 +34,22 @@ const AddStudent = () => {
         <div className="form">
           <fieldset className="field">
             <legend> Name </legend>
-            <input type="text" name="Name" onChange={handleChange} />
+            <input type="text" name="name" onChange={handleChange} />
           </fieldset>
 
           <fieldset className="field">
             <legend> Age </legend>
-            <input type="number" name="Age" onChange={handleChange} />
+            <input type="number" name="age" onChange={handleChange} />
           </fieldset>
 
           <fieldset className="field">
             <legend> Course </legend>
-            <input type="text" name="Course" onChange={handleChange} />
+            <input type="text" name="course" onChange={handleChange} />
           </fieldset>
 
           <fieldset className="field">
             <legend> Batch </legend>
-            <input type="text" name="Batch" onChange={handleChange} />
+            <input type="text" name="batch" onChange={handleChange} />
           </fieldset>
         </div>
         <div className="grid-btn">
